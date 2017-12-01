@@ -14,6 +14,7 @@ const translateCash = {
     1: 'pennies'
 };
 
+// Function that takes the cost of an item and the amount of an item and makes correct change
 const makeChange = function(cost, paid) {    
     change = {};
     cashAvailable.forEach((available, denomination) => {
