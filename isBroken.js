@@ -2,7 +2,7 @@
 const cashValues = [[2000, 4], [1000, 3], [500, 6], [100,16], [25, 42], [10, 26], [5, 57], [1, 87]];
 const cashAvailable = new Map(cashValues);
 
-// Create language lookup for denomination - used in returning natural languge answer
+// Create language lookup for denomination - used in returning natural language answer
 const translateCash = {
     2000: 'twenties',
     1000: 'tens',
@@ -14,7 +14,7 @@ const translateCash = {
     1: 'pennies'
 };
 
-// Function that takes the cost of an item and the amount of an item and makes correct change
+// Function that takes the cost of an item and the amount paid by the buyer, and makes correct change
 const makeChange = function(cost, paid) {    
     change = {};
     cashAvailable.forEach((available, denomination) => {
